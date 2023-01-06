@@ -81,8 +81,20 @@ packer.startup(function(use)
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
 
-    -- snippets
+    -- Snippets
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
   }
+
+  -- Highlight
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        ts_update()
+    end,
+  }
+  
+  -- Indent Blankline
+  use "lukas-reineke/indent-blankline.nvim"
 end)
