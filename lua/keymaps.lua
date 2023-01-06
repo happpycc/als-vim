@@ -39,8 +39,8 @@ keymap("n", "<Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
 
 -- Manage buffer
-keymap("n", "<C-h>", ":bn<CR>", opts)
-keymap("n", "<C-l>", ":bp<CR>", opts)
+keymap("n", "<C-l>", ":bn<CR>", opts)
+keymap("n", "<C-h>", ":bp<CR>", opts)
 keymap("n", "<C-c>", ":bd<CR>", opts)
 
 -- Visual
@@ -59,4 +59,25 @@ keymap("v", "J", "5j", opts)
 keymap("v", "K", "5k", opts)
 
 -- nvim-tree
-keymap("n", ",t", ":NvimTreeToggle<CR>", opts)
+local status_ok, _ = pcall(require, "nvim-tree")
+if status_ok then
+  keymap("n", ",t", ":NvimTreeToggle<CR>", opts)
+end
+
+-- Fuzzy search
+local status_ok, builtin = pcall(require, "telescope.builtin")
+if status_ok then
+  vim.keymap.set('n', '<C-f>f', builtin.find_files, {})
+  vim.keymap.set('n', '<C-f>g', builtin.live_grep, {})
+  vim.keymap.set('n', '<C-f>b', builtin.buffers, {})
+  vim.keymap.set('n', '<C-f>h', builtin.help_tags, {})
+end
+
+-- lspconfig
+local status_ok, _ = pcall(require, "lspconfig")
+if status_ok then
+  vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
+  vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
+  vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
+  vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+end

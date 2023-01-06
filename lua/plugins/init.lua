@@ -50,4 +50,39 @@ packer.startup(function(use)
   }
   -- Top buffer line style
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  -- Startup window
+  use "glepnir/dashboard-nvim"
+
+  -- Fuzzy serach
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- Projects
+  use "ahmedkhalf/project.nvim"
+
+  -- lsp
+  use {
+    "williamboman/mason.nvim", -- Install language server automatically
+    "williamboman/mason-lspconfig.nvim", -- The bridge between mason and lspconfig
+    "neovim/nvim-lspconfig", -- Configurations for Nvim LSP
+
+    -- rust
+    'kdarkhan/rust-tools.nvim',
+  }
+
+  -- cmp
+  use {
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp',
+
+    -- snippets
+    'hrsh7th/cmp-vsnip',
+    'hrsh7th/vim-vsnip',
+  }
 end)
