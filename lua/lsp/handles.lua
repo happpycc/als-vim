@@ -2,7 +2,7 @@ local H = {}
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
-function H.on_attach(client, bufnr)
+function H.on_attach(_, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -30,7 +30,7 @@ local status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status then
   H.capabilities = {}
 else
-  H.capabilities = require("cmp_nvim_lsp").default_capabilities()
+  H.capabilities = cmp_nvim_lsp.default_capabilities()
 end
 
 return H

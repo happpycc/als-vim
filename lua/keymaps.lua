@@ -20,6 +20,7 @@ keymap("n", "<leader>h", "<C-w>h", opts)
 keymap("n", "<leader>j", "<C-w>j", opts)
 keymap("n", "<leader>k", "<C-w>k", opts)
 keymap("n", "<leader>l", "<C-w>l", opts)
+keymap("n", "<leader>o", ":only<CR>", opts)
 
 -- Save && Quit
 keymap("n", ",q", ":q<CR>", opts)
@@ -41,7 +42,7 @@ keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
 -- Manage buffer
 keymap("n", "<C-l>", ":bn<CR>", opts)
 keymap("n", "<C-h>", ":bp<CR>", opts)
-keymap("n", "<C-c>", ":bd<CR>", opts)
+keymap("n", "<C-x>", ":bd<CR>", opts)
 
 -- Visual
 -- Move text up and down
@@ -74,7 +75,7 @@ if status_ok then
 end
 
 -- lspconfig
-local status_ok, _ = pcall(require, "lspconfig")
+status_ok, _ = pcall(require, "lspconfig")
 if status_ok then
   vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
   vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)

@@ -29,13 +29,8 @@ nvim_tree.setup({
   },
 })
 
--- Auto close
-vim.cmd([[
-  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
-]])
-
 -- Auto switch folder
-require("nvim-tree").setup({
+nvim_tree.setup({
   sync_root_with_cwd = true,
   respect_buf_cwd = true,
   update_focused_file = {

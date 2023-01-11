@@ -13,6 +13,7 @@ end
 local servers = {
   "sumneko_lua",
   "pyright",
+  "tsserver",
 }
 
 M.install_language_server(servers)

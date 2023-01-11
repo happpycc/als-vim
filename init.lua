@@ -17,4 +17,6 @@ require "plugins.indent-blankline"
 
 -- lsp
 require "lsp"
+require "lsp.ui"
+
 require "lsp.languages.rust"
