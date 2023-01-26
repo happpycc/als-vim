@@ -94,7 +94,10 @@ packer.startup(function(use)
         ts_update()
     end,
   }
-  
+
   -- Indent Blankline
   use "lukas-reineke/indent-blankline.nvim"
+
+  -- Auto save
+  use "Pocco81/AutoSave.nvim"
 end)

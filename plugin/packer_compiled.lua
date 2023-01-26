@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["AutoSave.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\AutoSave.nvim",
+    url = "https://github.com/Pocco81/AutoSave.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
