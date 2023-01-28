@@ -27,8 +27,9 @@ packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- A theme of onedark
-  use 'navarasu/onedark.nvim'
+  -- Theme
+  -- use 'navarasu/onedark.nvim'
+  use 'JoosepAlviste/palenightfall.nvim'
 
   -- files explorer
   use {
@@ -52,16 +53,16 @@ packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Startup window
-  use "glepnir/dashboard-nvim"
+  -- use "glepnir/dashboard-nvim"
 
   -- Fuzzy serach
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  -- use {
+  --   'nvim-telescope/telescope.nvim', tag = '0.1.0',
+  --   requires = { {'nvim-lua/plenary.nvim'} }
+  -- }
 
   -- Projects
-  use "ahmedkhalf/project.nvim"
+  -- use "ahmedkhalf/project.nvim"
 
   -- lsp
   use {
