@@ -9,6 +9,7 @@ local feedkey = function(key, mode)
 end
 
 local cmp = require('cmp')
+local lspkind = require('lspkind')
 
 cmp.setup({
   snippet = {
@@ -50,7 +51,18 @@ cmp.setup({
     { name = 'vsnip' }, -- For vsnip users.
   }, {
     { name = 'buffer' },
-  })
+  }),
+
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = 'symbol', -- show only symbol annotations
+      maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+      ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
+
+      -- The function below will be called before any actual modifications from lspkind
+      -- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
+    })
+  }
 })
 
 -- Set configuration for specific filetype.
@@ -78,4 +90,14 @@ cmp.setup.cmdline(':', {
   }, {
     { name = 'cmdline' }
   })
+})
+
+local winhighlight = {
+  winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel",
+}
+cmp.setup({
+  window = {
+    completion = cmp.config.window.bordered(winhighlight),
+    documentation = cmp.config.window.bordered(winhighlight),
+  }
 })

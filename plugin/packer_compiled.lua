@@ -109,15 +109,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -174,25 +174,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\palenightfall.nvim",
     url = "https://github.com/JoosepAlviste/palenightfall.nvim"
   },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["project.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
-  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",
     url = "https://github.com/kdarkhan/rust-tools.nvim"
   },
-  ["telescope.nvim"] = {
+  ["symbols-outline.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   ["vim-vsnip"] = {
     loaded = true,

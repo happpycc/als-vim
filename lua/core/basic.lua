@@ -33,3 +33,7 @@ vim.bo.autoread = true
 
 -- Mouse support
 vim.o.mouse = "a"
+
+-- The nvim-tree need 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

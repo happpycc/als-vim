@@ -30,6 +30,7 @@ packer.startup(function(use)
   -- Theme
   -- use 'navarasu/onedark.nvim'
   use 'JoosepAlviste/palenightfall.nvim'
+  use "bluz71/vim-moonfly-colors"
 
   -- files explorer
   use {
@@ -85,6 +86,9 @@ packer.startup(function(use)
     -- Snippets
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
+
+    -- ui
+    'onsails/lspkind.nvim'
   }
 
   -- Highlight
@@ -101,4 +105,9 @@ packer.startup(function(use)
 
   -- Auto save
   use "Pocco81/AutoSave.nvim"
+
+  -- Document outline
+  use 'simrat39/symbols-outline.nvim'
+
+  use { "akinsho/toggleterm.nvim", tag = '*' }
 end)

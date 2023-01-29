@@ -36,13 +36,13 @@ keymap("n", "K", "5k", opts)
 -- Resize with arrows
 keymap("n", "<Up>", ":resize -2<CR>", opts)
 keymap("n", "<Down>", ":resize +2<CR>", opts)
-keymap("n", "<Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
 
 -- Manage buffer
 keymap("n", "<C-l>", ":bn<CR>", opts)
 keymap("n", "<C-h>", ":bp<CR>", opts)
-keymap("n", "<C-x>", ":bd<CR>", opts)
+
 
 -- Visual
 -- Move text up and down
@@ -65,13 +65,10 @@ if status_ok then
   keymap("n", ",t", ":NvimTreeToggle<CR>", opts)
 end
 
--- Fuzzy search
-local status_ok, builtin = pcall(require, "telescope.builtin")
+-- symbols-outline
+status_ok, _ = pcall(require, "symbols-outline")
 if status_ok then
-  vim.keymap.set('n', '<C-f>f', builtin.find_files, {})
-  vim.keymap.set('n', '<C-f>g', builtin.live_grep, {})
-  vim.keymap.set('n', '<C-f>b', builtin.buffers, {})
-  vim.keymap.set('n', '<C-f>h', builtin.help_tags, {})
+  keymap("n", ",s", ":SymbolsOutline<CR>", opts)
 end
 
 -- lspconfig
@@ -82,4 +79,3 @@ if status_ok then
   vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
   vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 end
-
