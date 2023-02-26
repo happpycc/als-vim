@@ -40,15 +40,11 @@ keymap("n", "<Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
 
 -- Manage buffer
-keymap("n", "<C-l>", ":bn<CR>", opts)
-keymap("n", "<C-h>", ":bp<CR>", opts)
+keymap("n", "<A-l>", ":bn<CR>", opts)
+keymap("n", "<A-h>", ":bp<CR>", opts)
 
 
 -- Visual
--- Move text up and down
-keymap("v", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("v", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -63,6 +59,7 @@ keymap("v", "K", "5k", opts)
 local status_ok, _ = pcall(require, "nvim-tree")
 if status_ok then
   keymap("n", ",t", ":NvimTreeToggle<CR>", opts)
+  keymap("n", "<C-x>", ":NvimTreeClose<CR>:bd<CR>", opts)
 end
 
 -- symbols-outline

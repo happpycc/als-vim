@@ -109,5 +109,9 @@ packer.startup(function(use)
   -- Document outline
   use 'simrat39/symbols-outline.nvim'
 
+  -- im-select
+  use 'keaising/im-select.nvim'
+
+  -- terminal
   use { "akinsho/toggleterm.nvim", tag = '*' }
 end)
