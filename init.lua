@@ -1,6 +1,6 @@
 require "core.basic"
-require "core.theme"
 require "core.keymaps"
+require "core.themes.tokyonight"
 
 -- plugins
 require "plugins"

@@ -28,9 +28,7 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Theme
-  -- use 'navarasu/onedark.nvim'
-  use 'JoosepAlviste/palenightfall.nvim'
-  use "bluz71/vim-moonfly-colors"
+  use 'folke/tokyonight.nvim'
 
   -- files explorer
   use {

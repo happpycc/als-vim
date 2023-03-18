@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["im-select.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\im-select.nvim",
+    url = "https://github.com/keaising/im-select.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
@@ -169,11 +174,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["palenightfall.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\palenightfall.nvim",
-    url = "https://github.com/JoosepAlviste/palenightfall.nvim"
-  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",
@@ -189,10 +189,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["vim-moonfly-colors"] = {
+  ["tokyonight.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
