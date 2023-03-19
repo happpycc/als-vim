@@ -59,7 +59,6 @@ keymap("v", "K", "5k", opts)
 local status_ok, _ = pcall(require, "nvim-tree")
 if status_ok then
   keymap("n", ",t", ":NvimTreeToggle<CR>", opts)
-  keymap("n", "<C-x>", ":NvimTreeClose<CR>:bd<CR>", opts)
 end
 
 -- symbols-outline
@@ -76,3 +75,5 @@ if status_ok then
   vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
   vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 end
+
+keymap("n", "<C-x>", ":Bdelete!<CR>", opts)

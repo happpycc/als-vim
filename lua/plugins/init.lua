@@ -49,7 +49,10 @@ packer.startup(function(use)
 
   }
   -- Top buffer line style
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = {
+    'nvim-tree/nvim-web-devicons',
+    'moll/vim-bbye',
+  }}
 
   -- Startup window
   -- use "glepnir/dashboard-nvim"
@@ -84,6 +87,7 @@ packer.startup(function(use)
     -- Snippets
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
+    'rafamadriz/friendly-snippets',
 
     -- ui
     'onsails/lspkind.nvim'

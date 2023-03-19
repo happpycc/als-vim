@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["im-select.nvim"] = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\im-select.nvim",
@@ -193,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "C:\\Users\\32456\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   },
   ["vim-vsnip"] = {
     loaded = true,

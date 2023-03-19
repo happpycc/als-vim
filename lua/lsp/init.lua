@@ -22,7 +22,8 @@ M.install_language_server(servers)
 local H = require "lsp.handles"
 
 for _, server in pairs(servers) do
-  local status, opts = pcall(require, "lsp.languages." .. server)
+  local opts
+  status, opts = pcall(require, "lsp.languages." .. server)
   if not status then
     lspconfig[server].setup({
       on_attach = H.on_attach,
