@@ -1,4 +1,10 @@
-require('lspkind').init({
+local status, lspkind = pcall(require, "lspkind")
+if not status then
+  vim.notify("lspkind not found")
+  return
+end
+
+lspkind.init({
     -- DEPRECATED (use mode instead): enables text annotations
     --
     -- default: true

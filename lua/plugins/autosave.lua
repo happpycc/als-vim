@@ -4,8 +4,6 @@ if not status then
   return
 end
 
-
-
 autosave.setup(
   {
     enabled = true,
