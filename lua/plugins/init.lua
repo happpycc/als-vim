@@ -93,6 +93,9 @@ packer.startup(function(use)
     'onsails/lspkind.nvim'
   }
 
+  -- Format
+  use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+
   -- Highlight
   use {
     'nvim-treesitter/nvim-treesitter',

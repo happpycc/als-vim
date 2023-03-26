@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
@@ -37,13 +36,16 @@ keymap("n", "K", "5k", opts)
 -- Resize with arrows
 keymap("n", "<Up>", ":resize -2<CR>", opts)
 keymap("n", "<Down>", ":resize +2<CR>", opts)
-keymap("n", "<Left>", ":vertical resize +2<CR>", opts)
-keymap("n", "<Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Left>", ":vertical resize -2<CR>", opts)
 
 -- Manage buffer
 keymap("n", "<A-l>", ":bn<CR>", opts)
 keymap("n", "<A-h>", ":bp<CR>", opts)
 
+-- Split window
+keymap("n", "<A-\\>", ":split<CR>", opts)
+keymap("n", "<A-'>", ":vsplit<CR>", opts)
 
 -- Visual
 -- Stay in indent mode
