@@ -8,8 +8,18 @@ local feedkey = function(key, mode)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
 end
 
-local cmp = require('cmp')
-local lspkind = require('lspkind')
+local status, cmp = pcall(require, "cmp")
+if not status then
+    vim.notify("cmp not found")
+  return
+end
+
+local lspkind
+status, lspkind = pcall(require, "lspkind")
+if not status then
+    vim.notify("bufferline not found")
+  return
+end
 
 cmp.setup({
   snippet = {
