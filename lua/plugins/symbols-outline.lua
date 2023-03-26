@@ -1,6 +1,7 @@
 local status, symbols_outline = pcall(require, "symbols-outline")
 if not status then
   vim.notify("not found sysbbols-outline.nvim")
+  return
 end
 
 symbols_outline.setup({

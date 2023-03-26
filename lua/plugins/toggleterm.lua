@@ -1,6 +1,7 @@
 local status, toggleterm = pcall(require, "toggleterm")
 if not status then
   vim.notify("not found toggleterm")
+  return
 end
 
 toggleterm.setup({
