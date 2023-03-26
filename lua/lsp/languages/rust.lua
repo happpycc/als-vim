@@ -1,4 +1,9 @@
-local rt = require "rust-tools"
+local status, rt = pcall(require, "rt")
+if not status then
+  vim.notify("not found rust-tools")
+  return
+end
+
 local H = require "lsp.handles"
 
 rt.setup({
