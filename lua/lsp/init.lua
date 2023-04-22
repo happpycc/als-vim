@@ -11,7 +11,7 @@ if not M.status then
 end
 
 local servers = {
-  "sumneko_lua",
+  "lua_ls",
   "pyright",
   "tsserver",
 }

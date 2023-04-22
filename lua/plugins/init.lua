@@ -54,18 +54,6 @@ packer.startup(function(use)
     'moll/vim-bbye',
   }}
 
-  -- Startup window
-  -- use "glepnir/dashboard-nvim"
-
-  -- Fuzzy serach
-  -- use {
-  --   'nvim-telescope/telescope.nvim', tag = '0.1.0',
-  --   requires = { {'nvim-lua/plenary.nvim'} }
-  -- }
-
-  -- Projects
-  -- use "ahmedkhalf/project.nvim"
-
   -- lsp
   use {
     "williamboman/mason.nvim", -- Install language server automatically
@@ -113,9 +101,6 @@ packer.startup(function(use)
 
   -- Document outline
   use 'simrat39/symbols-outline.nvim'
-
-  -- im-select
-  use 'keaising/im-select.nvim'
 
   -- terminal
   use { "akinsho/toggleterm.nvim", tag = '*' }
